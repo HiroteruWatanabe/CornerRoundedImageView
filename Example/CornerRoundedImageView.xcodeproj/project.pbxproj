@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A8F44FF5D5797BA7B7BCA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		00A8F44FF5D5797BA7B7BCA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		05AE6E31D58C06E496435A17 /* Pods_CornerRoundedImageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CornerRoundedImageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A532525524DEE65D7A4716B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0A532525524DEE65D7A4716B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1AF35013CF5D4C8082A5676B /* Pods_CornerRoundedImageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CornerRoundedImageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7A91C8286346DBA6040A8B /* Pods-CornerRoundedImageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerRoundedImageView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CornerRoundedImageView_Tests/Pods-CornerRoundedImageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CornerRoundedImageView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CornerRoundedImageView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +43,7 @@
 		607FACE51AFB9204008FA782 /* CornerRoundedImageView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CornerRoundedImageView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		991E083DFA128084FEE6391B /* CornerRoundedImageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CornerRoundedImageView.podspec; path = ../CornerRoundedImageView.podspec; sourceTree = "<group>"; };
+		991E083DFA128084FEE6391B /* CornerRoundedImageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CornerRoundedImageView.podspec; path = ../CornerRoundedImageView.podspec; sourceTree = "<group>"; };
 		C41531EC25DD225B71827A6E /* Pods-CornerRoundedImageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerRoundedImageView_Example.debug.xcconfig"; path = "Target Support Files/Pods-CornerRoundedImageView_Example/Pods-CornerRoundedImageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C5CFEA2316842AC4C46CF825 /* Pods-CornerRoundedImageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerRoundedImageView_Example.release.xcconfig"; path = "Target Support Files/Pods-CornerRoundedImageView_Example/Pods-CornerRoundedImageView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D76C5D41D9FBB5662DD8E7AA /* Pods-CornerRoundedImageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerRoundedImageView_Tests.release.xcconfig"; path = "Target Support Files/Pods-CornerRoundedImageView_Tests/Pods-CornerRoundedImageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +77,6 @@
 				1B7A91C8286346DBA6040A8B /* Pods-CornerRoundedImageView_Tests.debug.xcconfig */,
 				D76C5D41D9FBB5662DD8E7AA /* Pods-CornerRoundedImageView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = YFQA8GKY2Y;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = YFQA8GKY2Y;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,6 +480,7 @@
 			baseConfigurationReference = C41531EC25DD225B71827A6E /* Pods-CornerRoundedImageView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YFQA8GKY2Y;
 				INFOPLIST_FILE = CornerRoundedImageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +496,7 @@
 			baseConfigurationReference = C5CFEA2316842AC4C46CF825 /* Pods-CornerRoundedImageView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YFQA8GKY2Y;
 				INFOPLIST_FILE = CornerRoundedImageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B7A91C8286346DBA6040A8B /* Pods-CornerRoundedImageView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = YFQA8GKY2Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D76C5D41D9FBB5662DD8E7AA /* Pods-CornerRoundedImageView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = YFQA8GKY2Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

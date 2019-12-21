@@ -29,8 +29,19 @@ class CornerRoundedImageViewImageView: UIImageView {
     setup()
   }
   
+  deinit {
+    removeObserver(self, forKeyPath: #keyPath(CornerRoundedImageViewImageView.bounds))
+  }
+  
   private func setup() {
+    addObserver(self, forKeyPath: #keyPath(CornerRoundedImageViewImageView.bounds), options: [.new, .old], context: nil)
     setupCornerRoundedMask()
+  }
+  
+  override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    if keyPath == #keyPath(CornerRoundedImageViewImageView.bounds) {
+      setupCornerRoundedMask()
+    }
   }
   
   private func setupCornerRoundedMask() {

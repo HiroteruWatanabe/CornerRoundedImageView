@@ -1,15 +1,15 @@
 import UIKit
 
-class CornerRoundedImageViewImageView: UIImageView {
+open class CornerRoundedImageViewImageView: UIImageView {
   private let maskLayer = CAShapeLayer()
   
-  @IBInspectable var cornerRadius: CGFloat = 8 {
+  @IBInspectable open var cornerRadius: CGFloat = 8 {
     didSet {
       setupCornerRoundedMask()
     }
   }
   
-  override var image: UIImage? {
+  override open var image: UIImage? {
     get {
       return super.image
     }
@@ -19,22 +19,22 @@ class CornerRoundedImageViewImageView: UIImageView {
     }
   }
   
-  override init(frame: CGRect) {
+  override public init(frame: CGRect) {
     super.init(frame: frame)
     setup()
   }
   
-  override init(image: UIImage?) {
+  override public init(image: UIImage?) {
     super.init(image: image)
     setup()
   }
   
-  override init(image: UIImage?, highlightedImage: UIImage?) {
+  override public init(image: UIImage?, highlightedImage: UIImage?) {
     super.init(image: image, highlightedImage: highlightedImage)
     setup()
   }
   
-  required init?(coder: NSCoder) {
+  required public init?(coder: NSCoder) {
     super.init(coder: coder)
     setup()
   }
@@ -48,7 +48,7 @@ class CornerRoundedImageViewImageView: UIImageView {
     setupCornerRoundedMask()
   }
   
-  override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+  override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
     if keyPath == #keyPath(CornerRoundedImageViewImageView.bounds) {
       setupCornerRoundedMask()
     }

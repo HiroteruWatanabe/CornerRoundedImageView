@@ -1,0 +1,16 @@
+PODS:
+  - CornerRoundedImageView (0.1.0)
+
+DEPENDENCIES:
+  - CornerRoundedImageView (from `../`)
+
+EXTERNAL SOURCES:
+  CornerRoundedImageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CornerRoundedImageView: 2d7c274fd6e09a07658a840893e5607ee31f2062
+
+PODFILE CHECKSUM: bb0ba175182f3eadf614aea425fb8132d8d0ce8c
+
+COCOAPODS: 1.8.4

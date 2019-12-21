@@ -9,6 +9,16 @@ class CornerRoundedImageViewImageView: UIImageView {
     }
   }
   
+  override var image: UIImage? {
+    get {
+      return super.image
+    }
+    set {
+      super.image = newValue
+      setupCornerRoundedMask()
+    }
+  }
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     setup()
@@ -45,10 +55,20 @@ class CornerRoundedImageViewImageView: UIImageView {
   }
   
   private func setupCornerRoundedMask() {
-    let path = UIBezierPath(roundedRect: CGRect(origin: CGPoint(x: (bounds.width - frame.size.width) / 2, y: (bounds.height - frame.size.height) / 2), size: frame.size), cornerRadius: cornerRadius)
+    let path = UIBezierPath(roundedRect: CGRect(origin: CGPoint(x: (bounds.width - imagePresentationSize.width) / 2, y: (bounds.height - imagePresentationSize.height) / 2), size: imagePresentationSize), cornerRadius: cornerRadius)
     maskLayer.path = path.cgPath
     maskLayer.frame = bounds
     maskLayer.fillRule = .evenOdd
     layer.mask = maskLayer
+  }
+  
+  private var imagePresentationSize: CGSize {
+    guard let image = image else { return frame.size }
+    let aspectRatio = image.size.width / image.size.height
+    if aspectRatio > 1.0 {
+      return CGSize(width: frame.width, height: frame.height / aspectRatio)
+    } else {
+      return CGSize(width: frame.width * aspectRatio, height: frame.height)
+    }
   }
 }
